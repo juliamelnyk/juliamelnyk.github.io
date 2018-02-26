@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" 
+    	  content="ie=edge">
+	<title>Gratia</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Roboto:400,900" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+		<header class="heading">
+			<div class="container" >
+				<div class="navbar-header visible-xs">
+					<a href="#" class="heading__navLogo"><img src="../img/logo.png" alt="Gratia logo" class="logo"></a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu">
+						<span class="burger">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</span>
+						<span class="glyphicon glyphicon-remove"></span>	
+					</button>
+				</div>
+				<nav class="heading__nav collapse navbar-collapse" id="responsive-menu">
+					<ul>
+						<li><a href="../index.html" class="heading__navLink">Main</a></li><!--
+						--><li><a href="menu.html" class="heading__navLink">Menu</a></li><!--
+						--><li><a href="form.html" class="heading__navLink heading__navLink_active">Book a table</a></li><!--
+						--><li class="hidden-xs"><a href="../index.html" class="heading__navLink heading__navLogo"><img src="../img/logo.png" alt="Gratia logo" class="logo"></a></li><!--
+						--><li><a href="../index.html#gallery" class="heading__navLink">Gallery</a></li><!--
+						--><li><a href="menu_item.html" class="heading__navLink">About</a></li><!--
+						--><li><a href="#contacts" class="heading__navLink">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div id="menuItem" class="menuItem">
+				<div class="container">
+					<div class="row">
+						<div id="about" class="col-sm-12 headerContainer">
+							<div class="Block__header">
+								<h2>book a table</h2>
+								<span class="header-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</div>
+						</div>
+						<div class="col-xs-10 col-xs-offset-1">
+							<form id="FORM" action="#" method="post">
+								<div class="row">
+									<div class="col-sm-4 col-md-2 t_center">
+										<input type="text" name="data" placeholder="DD" pattern="[0-9]{2}" maxlength="2" required>
+									</div>
+									<div class="col-sm-4 col-md-2 t_center">
+										<input type="text" name=month" placeholder="MM" pattern="[0-9]{2}" maxlength="2" required>
+									</div>
+									<div class="col-sm-4 col-md-2 t_center">
+										<input type="text" name="year" placeholder="YY" pattern="[0-9]{2}" minlength="4" maxlength="4" required>
+									</div>
+									<div class="col-sm-6 col-md-3 t_center">
+										<input type="text" name="hours" placeholder="HOUR" pattern="[0-9]" maxlength="2" required>
+									</div>
+									<div class="col-sm-6 col-md-3 t_center">
+										<input type="text" name="numberOfPeople" placeholder="NUMBER OF PEOPLE" pattern="[0-9]" maxlength="3" required>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<input type="text" name="userName" placeholder="FIRST NAME AND LAST NAME" required>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<input type="text" name="phoneNumber" placeholder="PHONE NUMBER" pattern="[0-9]{10}" required>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<input type="email" name="email" placeholder="E-MAIL" required>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<input type="text" list="prepareMenu" name="choose-menu" placeholder="PREPARE MENU" required>
+										<datalist id="prepareMenu">
+											<option>Burger-Menu</option>		
+											<option>Dessert-Menu</option>	
+											<option>Main-Menu</option>	
+											<option>Grill-Menu</option>
+											<option>Salad-Menu</option>		
+										</datalist>
+									</div>
+									<div class="col-xs-12">
+										<textarea class="message" name="message" placeholder="Your message..." maxlength="1000"></textarea>
+									</div>
+									<div class="col-xs-12">
+										<button type="submit" class="btn_send" name="Send">SEND</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="logo_round">
+					<img src="../img/logo2.png" alt="logo">
+				</div>
+				<div class="footer__content center-block">
+					<a href="../index.html"><h4>Gratia Restaurant</h4></a>
+					<span class="header-description">&copy; 2018 Melnyk
+					<a href="mailto:juljashamel@gmail.com" class="mailLink"><br>juljashamel@gmail.com</a></span>
+				</div>
+				<div id="contacts" class="social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
+		<a href="#menuItem" class="arrow-up"></a>
+	<script src="../js/libs.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/jquery.vide.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+</html>
